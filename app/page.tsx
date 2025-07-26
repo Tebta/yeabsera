@@ -1,11 +1,29 @@
+'use client'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Brain, Heart, Users, Shield, Star, Calendar, Phone, Mail } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { useEffect, useRef } from "react"
+import gsap from "gsap";
+import { ImagesSliderDemo } from "@/components/hero"
+import Navbar from "@/components/nav"
 
 export default function HomePage() {
+
+    const titleRef = useRef<HTMLHeadingElement>(null);
+  
+    useEffect(() => {
+      if (titleRef.current) {
+        gsap.from(titleRef.current, {
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          ease: "power2.out",
+        });
+      }
+    }, []);
   const services = [
     {
       icon: <Brain className="h-8 w-8 text-blue-600" />,
@@ -54,12 +72,12 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b">
+      {/* <nav className="bg-transparent sticky top-0 shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Brain className="h-8 w-8 text-blue-600" />
-              <span className="text-xl font-bold text-gray-900">MindPath Ethiopia</span>
+              <span className="text-xl font-bold text-gray-900">School’s of Intelligence</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
@@ -86,17 +104,18 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
+      <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">
                 Professional Mental Health Support
               </Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <h1 ref={titleRef} className="text-4xl font-bold lg:text-6xl font-bold text-gray-900 mb-6">
                 Your Mental Health Matters.
                 <span className="text-blue-600"> Healing Begins Here.</span>
               </h1>
@@ -129,7 +148,8 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <ImagesSliderDemo />
 
       {/* Services Preview */}
       <section className="py-20 bg-white">
@@ -225,7 +245,7 @@ export default function HomePage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Brain className="h-8 w-8 text-blue-400" />
-                <span className="text-xl font-bold">MindPath Ethiopia</span>
+                <span className="text-xl font-bold">School’s of Intelligence</span>
               </div>
               <p className="text-gray-400">
                 Professional mental health support rooted in science and cultural sensitivity.
@@ -272,7 +292,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 MindPath Ethiopia. All rights reserved.</p>
+            <p>&copy; 2024 School’s of Intelligence. All rights reserved.</p>
           </div>
         </div>
       </footer>

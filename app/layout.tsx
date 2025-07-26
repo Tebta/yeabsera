@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-// import { GeistSans } from 'geist/font/sans'
+// import { Poppins } from ''
 // import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Yeabsera',
   description: '',
-  generator: 'v0.dev',
+  // generator: 'v0.dev',
 }
 
 export default function RootLayout({

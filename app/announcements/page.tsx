@@ -55,7 +55,7 @@ export default function AnnouncementsPage() {
       date: "2024-02-15",
       time: "10:00 AM",
       duration: "2 hours",
-      location: "MindPath Ethiopia Office, Bole",
+      location: "School’s of Intelligence Office, Bole",
       maxParticipants: 12,
       currentParticipants: 8,
       price: "500 ETB",
@@ -83,7 +83,7 @@ export default function AnnouncementsPage() {
       date: "2024-02-20",
       time: "2:00 PM",
       duration: "2.5 hours",
-      location: "MindPath Ethiopia Office, Bole",
+      location: "School’s of Intelligence Office, Bole",
       maxParticipants: 10,
       currentParticipants: 6,
       price: "600 ETB",
@@ -111,7 +111,7 @@ export default function AnnouncementsPage() {
       date: "2024-03-05",
       time: "9:00 AM",
       duration: "4 hours",
-      location: "MindPath Ethiopia Office, Bole",
+      location: "School’s of Intelligence Office, Bole",
       maxParticipants: 15,
       currentParticipants: 12,
       price: "800 ETB",
@@ -221,7 +221,7 @@ export default function AnnouncementsPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Brain className="h-8 w-8 text-blue-600" />
-              <span className="text-xl font-bold text-gray-900">MindPath Ethiopia</span>
+              <span className="text-xl font-bold text-gray-900">School’s of Intelligence</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">

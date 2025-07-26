@@ -44,7 +44,7 @@ export default function PaymentPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Brain className="h-8 w-8 text-blue-600" />
-              <span className="text-xl font-bold text-gray-900">MindPath Ethiopia</span>
+              <span className="text-xl font-bold text-gray-900">School’s of Intelligence</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
@@ -134,7 +134,7 @@ export default function PaymentPage() {
                     <p className="text-blue-800 text-center">
                       <strong>Merchant Number:</strong> 0911123456
                       <br />
-                      <strong>Merchant Name:</strong> MindPath Ethiopia
+                      <strong>Merchant Name:</strong> School’s of Intelligence
                     </p>
                   </div>
                 </CardContent>
@@ -169,7 +169,7 @@ export default function PaymentPage() {
                     <p className="text-green-800 text-center">
                       <strong>Account Number:</strong> 1000123456789
                       <br />
-                      <strong>Account Name:</strong> MindPath Ethiopia
+                      <strong>Account Name:</strong> School’s of Intelligence
                       <br />
                       <strong>Bank:</strong> Commercial Bank of Ethiopia
                     </p>
