@@ -21,7 +21,7 @@ export default function BookingConfirmationPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b">
+      {/* <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
@@ -47,7 +47,7 @@ export default function BookingConfirmationPage() {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Success Header */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">

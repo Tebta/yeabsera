@@ -216,7 +216,7 @@ export default function AnnouncementsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b">
+      {/* <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
@@ -248,7 +248,7 @@ export default function AnnouncementsPage() {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Header */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
