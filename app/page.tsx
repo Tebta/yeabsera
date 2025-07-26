@@ -105,7 +105,7 @@ export default function HomePage() {
           </div>
         </div>
       </nav> */}
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Hero Section */}
       {/* <section className="py-20 px-4 sm:px-6 lg:px-8">

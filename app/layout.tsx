@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 // import { Poppins } from ''
 // import { GeistMono } from 'geist/font/mono'
 import './globals.css'
+import Navbar from '@/components/nav'
 
 export const metadata: Metadata = {
   title: 'Yeabsera',
@@ -25,7 +26,10 @@ html {
 }
         `}</style> */}
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        </body>
     </html>
   )
 }

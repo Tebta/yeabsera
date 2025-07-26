@@ -43,7 +43,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b">
+      {/* <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
@@ -72,7 +72,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -81,8 +81,8 @@ export default function AboutPage() {
             <div>
               <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">ስለእኔ - About Me</Badge>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Meet Your Mental Wellness
-                <span className="text-blue-600"> Partner</span>
+                YE'ABSERA YOHANNIS
+                {/* <span className="text-blue-600"> Partner</span> */}
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 As a mental health professional with a Master's degree in Counseling Psychology and a Bachelor's in
@@ -97,15 +97,15 @@ export default function AboutPage() {
               </Button>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8">
+              {/* <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8"> */}
                 <Image
                   src="/images/psychologist-headshot.jpg"
                   alt="Professional Psychologist"
-                  width={400}
+                  width={800}
                   height={500}
                   className="rounded-xl shadow-lg"
                 />
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
